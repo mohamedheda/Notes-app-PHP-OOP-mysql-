@@ -1,0 +1,133 @@
+* {
+    box-sizing: border-box;
+}
+.color {
+    background-color: #e0b1cb;
+    background-color: #be95c4;
+    background-color: #5e548e;
+    background-color: #231942;
+}
+body {
+    font-family: Arial;
+    background-color: #5e548e;
+    box-sizing: border-box;
+}
+
+.new-note{
+    max-width: 1000px;
+    margin: 40px auto;
+}
+
+.new-note input,
+.new-note textarea {
+    font-family: Arial;
+    color: #e0b1cb;
+    border: 1px solid #be95c4;
+    padding: 10px 10px;
+    display: block;
+    width: 100%;
+    margin-bottom: 10px;
+    background-color: #231942;
+    border-radius: 10px;
+}
+.new-note button{
+    font-family: Arial;
+    color: #231942;
+    border: 1px solid #be95c4;
+    padding: 10px 10px;
+    display: block;
+    width: 100%;
+    margin-bottom: 10px;
+    background-color: #be95c4;
+    border-radius: 10px;
+    font-weight: bolder;
+    font-size: large;
+}
+.new-note input:focus{
+    outline: #e0b1cb solid .3px;
+}
+.new-note textarea:focus {
+    outline: #e0b1cb solid .3px;
+}
+.new-note button:hover {
+    font-family: Arial;
+font-weight: bolder;
+    color: #be95c4;
+    border: 2px solid #be95c4  ;
+    padding: 10px 10px;
+    display: block;
+    width: 100%;
+    margin-bottom: 10px;
+    background-color: #231942;
+    transition: ease .5s;
+    cursor: pointer;
+}
+.notes {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.note {
+    background-color: #e0b1cb;
+    color: #231942;
+    width: 300px;
+    display: inline-block;
+    margin: 10px;
+    padding: 10px;
+    position: relative;
+    min-height: 100px;
+    border-radius: 10px;
+    border: 1px solid #be95c4  ;
+    box-shadow: 10px;
+
+}
+.note .title{
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+.note .title a {
+    color: #231942;
+    text-decoration: none;
+    font-weight: bolder;
+}
+.note .close {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    background-color: transparent;
+    border: none;
+}
+.note .close:hover {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    background-color: transparent;
+    border: none;
+    font-size: 15px;
+    transition: ease .5s;
+    cursor: pointer;
+    color: #5e548e;
+}
+.note small {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    margin-top: 10px;
+    display: block;
+    text-align: right;
+    font-style: italic;
+    color: #231942;
+}
+.message {
+    position: absolute;
+    text-align: center;
+    color: #be95c4;
+    z-index: 999;
+    background-color: #231942;
+    border: 1px solid #be95c4;
+    padding: 10px;
+    top: 0;
+    width: 100%;
+    left: 0px;
+    opacity: .5;
+}
